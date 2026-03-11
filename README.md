@@ -33,20 +33,12 @@ Hook日志函数并打印
 例如
 ```
   {
-    "original_index": 0,
     "target_addr": "0x1873c4548",
-    "real_name": "InitGpuConfig",
-    "disasm_line": "db 0A1h",
-    "real_addr": "0x1873c4548",
-    "const_lag_1": "A1",
-    "head": "30 44 30 30",
-    "const_lag_2": "B1",
-    "content": "45 38 38 42 45 37 39 41 43 42 31 38 46 30 38 31 32 44 30 38 32 35 39 45 42 36",
-    "const_lag_3": "C1",
-    "all_hex": "A1 30 44 30 30 B1 45 38 38 42 45 37 39 41 43 42 31 38 46 30 38 31 32 44 30 38 32 35 39 45 42 36 C1",
-    "found_addr": "0x1873c4548"
+    "real_name": "InitGpuConfig"
   },
 ```
+  target_addr 是密文字符串的起始位置
+  real_name 是需要替换的明文内容
   然后 IDA中 执行 脚本
 
   
